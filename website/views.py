@@ -16,7 +16,7 @@ def mainPage():
         return searchBarAlgorithm(data['text'], word_list_dict)
     
     if request.method == "GET":
-        return render_template("index.html")
+        return render_template("gelistir.html")
     
 def search_dict(word):    
     return searchBarAlgorithm(word, word_list_dict)

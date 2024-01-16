@@ -6,7 +6,7 @@
     --footer-bg-color : green;
     --section-bg-color : #edecec;
     --text-color1 : #FFF;
-    --search-button : #3777BC;
+    --search-buton : #3777BC;
 }
 
 *{
@@ -28,7 +28,6 @@ body, html{
 .container{
     box-sizing: border-box;
     width: 100%;
-    height: 120vh;
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +55,7 @@ body, html{
 }
 
 .section {
-    padding : 75px;
+    padding : 50px;
     flex: 1 1 auto;
     background-color: var(--section-bg-color);
     display: flex;
@@ -66,16 +65,15 @@ body, html{
 
 .searchBarContainer{
     width: 100%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .search_box{
-	position: relative;
+	position: absolute;
 	height: 50px;
-    width: 50%;
+    width: 65%;
     border: 1px solid #bdbdbd;
     border-radius: 3px;
 }
@@ -119,12 +117,12 @@ body, html{
 }
 
 .resultContainer{
-    width: 50%;
+    width: 65%;
     background-color: #fff;
     margin: 2px;
-    border: 1px solid #bdbdbd;
     border-radius: 3px;
-    z-index: 1;
+    z-index: 100;
+    position: relative;
 }
 
 .result-li{
@@ -137,5 +135,18 @@ body, html{
 .result-li:hover{
     cursor: pointer;
     background-color: #dfdfdf;
+}
 
+.dictionary-container{
+    padding: 50px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    width: 65%;
+    background-color: white;
+    position: relative;
 }
